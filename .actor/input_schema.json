@@ -1,5 +1,6 @@
 ﻿{
   "title": "GitHub Bounty Monitor input",
+  "description": "Search public GitHub issues for bounty and paid-task opportunities.",
   "type": "object",
   "schemaVersion": 1,
   "properties": {
@@ -13,13 +14,14 @@
     "repositories": {
       "title": "Repositories",
       "type": "array",
-      "description": "Optional owner/repository allowlist.",
+      "description": "Optional owner/repository allowlist. Leave empty to search across GitHub.",
       "editor": "stringList",
       "default": []
     },
     "maxResults": {
       "title": "Maximum results",
       "type": "integer",
+      "description": "Maximum number of bounty opportunities to return.",
       "minimum": 1,
       "maximum": 100,
       "default": 25
@@ -27,12 +29,14 @@
     "minReward": {
       "title": "Minimum reward",
       "type": "number",
+      "description": "Minimum numeric reward to include when a reward amount can be detected.",
       "minimum": 0,
       "default": 0
     },
     "zeroCapitalOnly": {
       "title": "Zero-capital only",
       "type": "boolean",
+      "description": "Exclude opportunities mentioning bonds, deposits, staking, entry fees, or pay-to-claim requirements.",
       "default": true
     }
   }
