@@ -1,0 +1,10 @@
+﻿{
+  "actorSpecification": 1,
+  "properties": {
+    "dataset": {
+      "type": "string",
+      "title": "GitHub bounty opportunities",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
+    }
+  }
+}
