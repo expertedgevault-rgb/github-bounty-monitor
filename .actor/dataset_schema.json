@@ -1,23 +1,38 @@
 ﻿{
   "actorSpecification": 1,
-  "fields": {},
+  "fields": {
+    "type": "object",
+    "properties": {
+      "title": { "type": "string" },
+      "url": { "type": "string" },
+      "repository": { "type": "string" },
+      "reward": { "type": ["number", "null"] },
+      "currency": { "type": ["string", "null"] },
+      "labels": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "comments": { "type": "integer" },
+      "createdAt": { "type": "string" },
+      "updatedAt": { "type": "string" },
+      "zeroCapitalRisk": { "type": "boolean" }
+    }
+  },
   "views": {
     "overview": {
       "title": "Bounty opportunities",
       "transformation": {
         "fields": [
           "title",
-          "url",
           "repository",
           "reward",
           "currency",
-          "labels",
+          "url",
           "updatedAt"
         ]
       },
       "display": {
-        "component": "table",
-        "properties": {}
+        "component": "table"
       }
     }
   }

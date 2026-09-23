@@ -4,13 +4,9 @@
   "title": "GitHub Bounty Monitor",
   "description": "Finds and normalizes public GitHub bounty opportunities.",
   "version": "1.0",
-  "build": {
-    "dockerfile": "../Dockerfile"
-  },
+  "dockerfile": "../Dockerfile",
   "input": "./input_schema.json",
   "storages": {
-    "dataset": {
-      "schema": "./dataset_schema.json"
-    }
+    "dataset": "./dataset_schema.json"
   }
 }
