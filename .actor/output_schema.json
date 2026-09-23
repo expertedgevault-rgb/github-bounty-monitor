@@ -1,9 +1,12 @@
 ﻿{
-  "actorSpecification": 1,
+  "actorOutputSchemaVersion": 1,
+  "title": "GitHub Bounty Monitor output",
+  "description": "GitHub bounty and paid-task opportunities found by the Actor.",
   "properties": {
-    "dataset": {
+    "results": {
       "type": "string",
-      "title": "GitHub bounty opportunities",
+      "title": "Bounty results",
+      "description": "Structured bounty opportunities stored in the default dataset.",
       "template": "{{links.apiDefaultDatasetUrl}}/items"
     }
   }
