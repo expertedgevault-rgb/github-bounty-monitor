@@ -1,0 +1,24 @@
+﻿{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Bounty opportunities",
+      "transformation": {
+        "fields": [
+          "title",
+          "url",
+          "repository",
+          "reward",
+          "currency",
+          "labels",
+          "updatedAt"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {}
+      }
+    }
+  }
+}

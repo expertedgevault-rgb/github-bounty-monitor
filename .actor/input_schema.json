@@ -1,0 +1,39 @@
+﻿{
+  "title": "GitHub Bounty Monitor input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "keywords": {
+      "title": "Keywords",
+      "type": "array",
+      "description": "GitHub bounty search terms.",
+      "editor": "stringList",
+      "default": ["bounty", "reward", "paid task"]
+    },
+    "repositories": {
+      "title": "Repositories",
+      "type": "array",
+      "description": "Optional owner/repository allowlist.",
+      "editor": "stringList",
+      "default": []
+    },
+    "maxResults": {
+      "title": "Maximum results",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100,
+      "default": 25
+    },
+    "minReward": {
+      "title": "Minimum reward",
+      "type": "number",
+      "minimum": 0,
+      "default": 0
+    },
+    "zeroCapitalOnly": {
+      "title": "Zero-capital only",
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
